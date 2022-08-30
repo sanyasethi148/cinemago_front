@@ -8,6 +8,7 @@ import { Login } from "./components/pages/Login";
 import { Signup } from "./components/pages/Signup";
 import Footer from "./components/Footer";
 import Details from "./components/pages/Details";
+import Book from "./components/pages/Book";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/movies" element={<Movies/>} /> <Route/>
             <Route path="/login" element={<Login/>} /> <Route/>
             <Route path="/signup" element={<Signup/>} /> <Route/>
+            <Route path="/book" element={<Book/>} /> <Route/>
             <Route path="/findbyid/:movieid" element={<Details/>} /> <Route/>
           </Routes>
         </div>
