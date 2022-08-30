@@ -1,0 +1,60 @@
+body{
+    background: #ad3a20;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c73a12, #c2503b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dc4227, #c95e4b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.form{
+    background-color: rgb(4, 5, 5);
+    border-radius: 5px;
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    /* height: 600px; */
+}
+
+.form-body{
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.form-body {
+    padding: 5px;
+}
+
+.form__label{
+    width: 40%;
+    font-size: 20px;
+}
+
+.form_input{
+    /* width: 200px; */
+    font-size: 40%;
+    height: 50px;
+    margin: 10px 0px;
+}
+
+.register{
+    text-align: center;
+
+}
+
+.btn{
+    width :200px;
+    padding: 13px ;
+    border-radius: 15px ;
+    color :rgb(215, 215, 215);
+    background-color: rgb(9, 154, 57);
+    font-size: 15px;
+}
+
+.btn:hover{
+    background-color:rgba(211, 8, 8, 0.797) 0px 1px 0px ;
+    box-shadow: rgba(211, 8, 8, 0.797) 0px 1px 0px, rgba(206, 7, 27, 0.906) 0px 0px 8px;
+}
+.username,.lastname,.email,.password,.phone ,.confirm-password
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}

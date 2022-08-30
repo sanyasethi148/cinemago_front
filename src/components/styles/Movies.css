@@ -1,0 +1,55 @@
+.ftitle{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: blueviolet;
+    padding-top: 10px;
+}
+
+.fdata{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 2px solid #1178b8;
+    padding-top: 10px;
+}
+
+.finfo{
+ padding-top: 10px;
+ font-size: 20px;
+ font-family: sans-serif;
+ padding-left: 20px;
+}
+
+.table{
+    width: 250px;
+    font-family: sans-serif;
+    border: 2px solid #000000;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.tt{
+    font-size: 30px;
+    font-family: sans-serif;
+    padding: 10px 0px;
+}
+
+.bb{
+  border: 2px solid #000000;
+  background-color: #1178b8;
+  color: white;
+}
+
+.bookcol{
+    display: flex;
+    flex-direction: column;
+}
+
+.bookrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 150px;
+}
