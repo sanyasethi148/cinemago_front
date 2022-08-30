@@ -139,22 +139,16 @@ export function Movies () {
     axios.defaults.headers = {
       auth: localStorage.getItem("token"),
     };
-console.log("first");
     async function fetchData() {
       try {
-        console.log("second");
         const data = (await axios.get("http://localhost:4000/api/allmovies",{})).data;
-        console.log(data);
-
         setMovies(data);
-        
       } catch (error) {
         console.log(error);
       }
     }
     fetchData();
   }, []);
-console.log("third" + {movies});
   return (
     <>
       <div style={{ backgroundColor: "#201E1E" }}>
