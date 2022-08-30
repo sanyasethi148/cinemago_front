@@ -139,11 +139,13 @@ export function Movies () {
     axios.defaults.headers = {
       auth: localStorage.getItem("token"),
     };
-
+console.log("first");
     async function fetchData() {
       try {
-        const data = (await axios.get("http://localhost:4000/api/allmovies", {})).data;
+        console.log("second");
+        const data = (await axios.get("http://localhost:4000/api/allmovies",{})).data;
         console.log(data);
+
         setMovies(data);
         
       } catch (error) {
@@ -152,7 +154,7 @@ export function Movies () {
     }
     fetchData();
   }, []);
-
+console.log("third" + {movies});
   return (
     <>
       <div style={{ backgroundColor: "#201E1E" }}>
@@ -170,13 +172,13 @@ export function Movies () {
                       // window.location.href = "/MovieInfo/" + data._id;
                       navigate("/Details/" + data._id)
                     }}>
-                        <img src={data.movieImage} alt="" />
+                        <img src={data.movieimg} alt="" />
                     </a>
                     </div>
                     <div className="movieDescr">
-                    <h3>{data.Title}</h3>
-                    <p>{data.Categorie}</p>
-                    <p>{data.Language}</p>
+                    <h3>{data.movieName}</h3>
+                    <p>{data.genre}</p>
+                    <p>{data.language}</p>
                     </div>
                     </div>
                 )
